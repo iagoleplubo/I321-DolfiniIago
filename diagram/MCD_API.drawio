@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="greG8VPn32m7W-zq0YGs">
+    <mxGraphModel dx="1406" dy="832" grid="0" gridSize="9" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="500" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titre" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=center;" value="MCD" vertex="1">
+          <mxGeometry height="30" width="200" x="440" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pizzas" parent="1" style="swimlane;startSize=30;html=1;fillColor=none;fontStyle=1;fontSize=14;" value="PIZZAS" vertex="1">
+          <mxGeometry height="140" width="220" x="80" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="pizzas" style="text;html=1;fontSize=13;align=left;spacingLeft=12;" value="name : Text" vertex="1">
+          <mxGeometry height="30" width="220" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="pizzas" style="text;html=1;fontSize=13;align=left;spacingLeft=12;" value="image : Text" vertex="1">
+          <mxGeometry height="30" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="pizzas" style="text;html=1;fontSize=13;align=left;spacingLeft=12;" value="price : Number" vertex="1">
+          <mxGeometry height="30" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc" parent="1" style="whiteSpace=wrap;html=1;fillColor=none;fontSize=13;" value="contient" vertex="1">
+          <mxGeometry height="45" width="120" x="470" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ingredients" parent="1" style="swimlane;startSize=30;html=1;fillColor=none;fontStyle=1;fontSize=14;" value="INGREDIENTS" vertex="1">
+          <mxGeometry height="106" width="220" x="760" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="i1" parent="ingredients" style="text;html=1;fontSize=13;align=left;spacingLeft=12;" value="name : Text" vertex="1">
+          <mxGeometry height="30" width="220" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" parent="ingredients" style="text;html=1;fontSize=13;align=left;spacingLeft=12;" value="price : Number" vertex="1">
+          <mxGeometry height="30" width="220" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="pizzas" style="endArrow=none;html=1;fontSize=12;verticalAlign=bottom;" target="assoc" value="0,N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="assoc" style="endArrow=none;html=1;fontSize=12;verticalAlign=bottom;" target="ingredients" value="1,N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
